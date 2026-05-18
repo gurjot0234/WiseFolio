@@ -54,3 +54,11 @@ export interface ChartDataPoint {
 export interface PriceMatrix {
   [date: string]: { [isin: string]: number };
 }
+
+export interface RecommendationResult {
+  isin: string;
+  name: string;
+  recommendedWeight: number;
+  currentWeight: number;
+  assetClass: string;
+}
