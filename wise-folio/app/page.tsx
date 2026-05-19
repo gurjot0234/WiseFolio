@@ -12,6 +12,7 @@ async function getPortfolioPipelineData(): Promise<PipelineData> {
     'https://antarctica-hiring-data.s3.eu-west-1.amazonaws.com/portfolio-optimisation/2026-04/constraints.json'
   ];
 
+  
   // 1. Cleaner parallel fetch orchestration
   const responses = await Promise.all(
     urls.map(url => fetch(url, { 
